@@ -1,0 +1,12 @@
+.content-issue {
+  padding: 1rem;
+  overflow-y: auto;
+  border-radius: .5rem;
+  background-color: hsl(var(--nextui-content1));
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  -webkit-word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  -webkit-overflow-scrolling: touch;
+}

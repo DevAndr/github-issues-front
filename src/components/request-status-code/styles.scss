@@ -1,0 +1,21 @@
+.request-status-code {
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.request-status-code.success {
+  color: #17c964;
+}
+
+.request-status-code.redirect {
+  color: #006FEE;
+}
+
+.request-status-code.client-error {
+  color: #f5a524;
+}
+
+.request-status-code.server-error {
+  color: #f31260;
+}

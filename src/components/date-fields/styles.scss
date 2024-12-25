@@ -1,0 +1,25 @@
+.date-field {
+    gap: .25rem;
+    display: flex;
+    font-size: .75rem;
+    color: hsl(var(--nextui-default-500));
+    align-items: center;
+    cursor: pointer;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    svg {
+        color: inherit;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: .65rem;
+
+        svg {
+            width: .65rem;
+            height: .65rem;
+        }
+    }
+}

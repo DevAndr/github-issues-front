@@ -1,0 +1,32 @@
+.state-issue {
+  display: flex;
+  color: #005BC4;
+  background-color: rgba(0, 91, 196, 0.2);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: .5rem;
+  border-radius: .5rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    font-weight: 400;
+    font-size: .75rem;
+    padding: .25rem;
+  }
+}
+
+.state-issue.close {
+  color: #12A150;
+  background-color: rgba(18, 161, 80, 0.2);
+}
+
+.state-issue.open {
+  color: #C20E4D;
+  background-color: rgba(194, 14, 77, 0.2);
+}

@@ -1,0 +1,16 @@
+.form-query-repository {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+
+    @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+    }
+}

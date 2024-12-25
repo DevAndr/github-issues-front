@@ -1,0 +1,90 @@
+@use "../../styles/scrollbar";
+
+.issues {
+  .issue {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    gap: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .avatar {
+      flex: 1 0 auto;
+    }
+
+    .content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      gap: .25rem;
+
+      .title {
+        color: hsl(var(--nextui-default-900));
+        transition: color 0.2s ease-in-out;
+        -webkit-transition: color 0.2s ease-in-out;
+      }
+
+      .details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: .5rem;
+        justify-content: space-between;
+
+        .dates {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          gap: .5rem;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: hsl(var(--nextui-default-100));
+
+      .content .title {
+        color: hsl(var(--nextui-primary-600));
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .issue {
+      padding: 0.25rem;
+
+      .avatar {
+        display: none;
+      }
+
+      .content {
+        gap: 0.15rem;
+
+        .title {
+          font-size: 0.875rem;
+        }
+
+        .details {
+          gap: 0.25rem;
+
+          .dates {
+            gap: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  @extend .scrollbar
+}

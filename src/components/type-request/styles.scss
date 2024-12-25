@@ -1,0 +1,26 @@
+.method-request-type {
+  font-weight: 600;
+  color: #006FEE;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.method-request-type.post {
+  color: #9353d3;
+}
+
+.method-request-type.get {
+  color: #006FEE;
+}
+
+.method-request-type.put {
+  color: #17c964;
+}
+
+.method-request-type.patch {
+  color: #f5a524;
+}
+
+.method-request-type.delete {
+  color: #f31260;
+}

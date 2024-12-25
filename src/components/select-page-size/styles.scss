@@ -1,0 +1,7 @@
+.select-page-size {
+  width: 320px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+.comment {
+  .body {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    .content {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      -ms-word-break: break-word;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .content * {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      -webkit-word-wrap: break-word;
+      -ms-word-wrap: break-word;
+    }
+
+    .avatar {
+      flex: 0 0 auto;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
