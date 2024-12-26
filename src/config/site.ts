@@ -24,7 +24,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    githubFront: "https://github.com/nextui-org/nextui",
-    githubBack: "https://github.com/nextui-org/nextui",
+    githubFront: "https://github.com/DevAndr/github-issues-front",
+    githubBack: "https://github.com/DevAndr/github-issues-back",
   },
 };
