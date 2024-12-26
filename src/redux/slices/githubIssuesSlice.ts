@@ -2,15 +2,13 @@ import { QueryIssues } from "@/types/github.types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface GithubState {
-  selectedRepository?: string | null;
   queryDataForIssues?: QueryIssues;
 }
 
 const initialState: GithubState = {
-  selectedRepository: null,
 };
 
-export const githubSlice = createSlice({
+export const githubIssuesSlice = createSlice({
   name: "github",
   initialState,
   reducers: {
@@ -20,4 +18,4 @@ export const githubSlice = createSlice({
   },
 });
 
-export default githubSlice.reducer;
+export default githubIssuesSlice.reducer;

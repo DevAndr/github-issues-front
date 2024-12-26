@@ -1,7 +1,7 @@
 import { Chip } from "@nextui-org/chip";
 import { QueryIssues } from "@/types/github.types.ts";
 import { useDispatch } from "react-redux";
-import { githubSlice } from "@/redux/slices/githubSlice.ts";
+import { githubIssuesSlice } from "@/redux/slices/githubIssuesSlice.ts";
 import { useSearchParams } from "react-router-dom";
 
 interface ExampleQueryIssuesProps {
@@ -14,7 +14,7 @@ function ExampleQueryIssues({ queryData }: ExampleQueryIssuesProps) {
 
   const onClickHandler = () => {
     setSearchParams({ ...queryData });
-    dispatch(githubSlice.actions.setQueryDataForIssues(queryData));
+    dispatch(githubIssuesSlice.actions.setQueryDataForIssues(queryData));
   };
 
   return <Chip className="cursor-pointer" color="primary" size="lg" variant="shadow" onClick={onClickHandler}>

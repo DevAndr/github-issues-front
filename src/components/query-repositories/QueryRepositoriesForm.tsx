@@ -3,7 +3,7 @@ import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { useActionState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { githubSlice } from "@/redux/slices/githubSlice";
+import { githubIssuesSlice } from "@/redux/slices/githubIssuesSlice.ts";
 import "./styles.scss";
 import { useSearchParams } from "react-router-dom";
 import SelectPageSize from "@/components/select-page-size/SelectPageSize.tsx";
@@ -20,7 +20,7 @@ function QueryRepositoriesForm() {
 
       if (owner && repo) {
         setSearchParams({ owner, repo });
-        dispatch(githubSlice.actions.setQueryDataForIssues({ owner, repo }));
+        dispatch(githubIssuesSlice.actions.setQueryDataForIssues({ owner, repo }));
       }
 
       return { owner, repo };
@@ -33,7 +33,7 @@ function QueryRepositoriesForm() {
 
     if (owner && repo) {
       setSearchParams({ owner, repo });
-      dispatch(githubSlice.actions.setQueryDataForIssues({ owner, repo }));
+      dispatch(githubIssuesSlice.actions.setQueryDataForIssues({ owner, repo }));
     }
   }, [queryParamsLocation]);
 

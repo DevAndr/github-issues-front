@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { githubApi } from "@/api/apiGithub.ts";
-import githubReducer from "./slices/githubSlice.ts";
+import githubReducer from "./slices/githubIssuesSlice.ts";
 import { apiLogs } from "@/api/apiLogs.ts";
 
 const rootReducer = combineReducers({
