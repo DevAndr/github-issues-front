@@ -3,7 +3,7 @@ import React, { memo } from "react";
 import DatetimeField from "@/components/logs/fields/datetime-field/DatetimeField.tsx";
 import RequestBody from "@/components/logs/fields/request-body-field/RequestBody.tsx";
 import TypeRequest from "@/components/logs/fields/type-request/TypeRequest.tsx";
-import RequestStatusCode from "@/components/logs/fields/request-status-code/RequestStatusCode.tsx";
+import RequestStatusCode from "@/components/logs/fields/request-status-code-field/RequestStatusCode.tsx";
 
 interface LogCellRenderProps {
   log: Log;
