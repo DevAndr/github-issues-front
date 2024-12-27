@@ -37,8 +37,6 @@ function QueryRepositoriesForm() {
     }
   }, [queryParamsLocation]);
 
-  console.log({ queryParamsLocation });
-
   return (
     <Form
       action={submitAction}

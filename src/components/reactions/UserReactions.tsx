@@ -16,8 +16,6 @@ function UserReactions({ reactions }: UserReactionsProps) {
     });
   }, [reactions]);
 
-  console.log(reactionsFiltered);
-
   return <Tooltip content="Реакции" className="capitalize" placement="bottom">
     <div className="reactions">
       {
